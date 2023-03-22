@@ -1,17 +1,20 @@
 import React from 'react';
-import imgBanner from '../../images/imgHome.png';
 import './home.css'
+import Banner from "../../components/banner/Banner"
+import Card from "../../components/card/Card"
 
 const Home = () => {
-return (
-    <div className='home_banner'>
+    return (
+        <div className='home_banner'>
+            <Banner />
 
-        <img scr={imgBanner}
-        alt=' falaise'></img>
-        <h1>Chez vous, partout et ailleurs</h1>
-        
-    </div>
-)
+
+            <section className='card_logement'>
+                <Card />
+
+            </section>
+        </div>
+    )
 
 
 }

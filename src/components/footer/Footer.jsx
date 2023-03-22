@@ -9,8 +9,7 @@ const Footer = () => {
 
         <div className='footer'>
             <footer>
-                <img scr={logo}
-                    alt='logo footer'></img>
+                <img src={logo} alt="vide" />
 
                 <p>© 2020 Kasa. All rights reserved</p>
             </footer>

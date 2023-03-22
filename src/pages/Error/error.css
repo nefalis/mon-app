@@ -1,0 +1,35 @@
+.pageError {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;
+
+}
+
+.pageError h1 {
+    font-weight: 700;
+    font-size: 288px;
+    width: 597px;
+    height: 263px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 66px;
+
+}
+
+.pageError p {
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 100%;
+    margin-bottom: 182px;
+}
+
+.pageError .home {
+    text-decoration: underline;
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 160px;
+
+}

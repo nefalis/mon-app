@@ -2,12 +2,12 @@ import React from 'react';
 
 
 const Logement = () => {
-return (
-    <div>
-     
-        Kasa
-    </div>
-)
+    return (
+        <div>
+
+            page logement
+        </div>
+    )
 
 
 }
