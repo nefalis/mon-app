@@ -19,22 +19,26 @@ header {
     height: 68px;
 }
 
-.header ul {
-    list-style: none;
-    font-size: 24px;
-}
-
-.header ul li {
+.header .navbar {
     display: inline-block;
     padding-right: 20px;
+
 
 }
 
 .header a {
-    text-decoration: none;
     color: #FF6060;
+    font-size: 24px;
 }
 
-.header a:hover {
-    text-decoration: underline;
+
+.sidebar {
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+
+}
+
+.sidebar:active {
+
+    text-decoration-line: underline;
 }

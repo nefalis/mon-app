@@ -9,27 +9,25 @@ import Layout from '../components/Layout';
 
 const Router = () => {
     return (
-        <div>
-            <Routes>
+        <Routes>
 
-                <Route element={<Layout />} >
+            <Route element={<Layout />} >
 
-                    {/* définie page par default*/}
-                    <Route index element={<Home />} />
-
-
-                    <Route path='/home' element={<Home />} />
-                    <Route path='/logement' element={<Logement />} />
-                    <Route path='/propos' element={<Propos />} />
-
-                    {/*si trouve pas execute cette route*/}
-                    <Route path='*' element={<Error />} />
-
-                </Route>
+                {/* définie page par default*/}
+                <Route index element={<Home />} />
 
 
-            </Routes>
-        </div>
+                <Route path='/home' element={<Home />} />
+                <Route path='/logement' element={<Logement />} />
+                <Route path='/propos' element={<Propos />} />
+
+                {/*si trouve pas execute cette route*/}
+                <Route path='*' element={<Error />} />
+
+            </Route>
+
+
+        </Routes>
     );
 };
 

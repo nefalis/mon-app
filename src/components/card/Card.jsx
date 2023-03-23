@@ -1,24 +1,20 @@
 import React from 'react';
-import './card.css'
-import logement from '../../api/api'
-import { Link } from "react-router-dom"
+import './card.css';
+import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = ({idCard, imgCard, titleCard}) => {
+
     return (
         <div className='card'>
-        
+
+                <Link className="card" to={"../Logement/" + idCard}>
+
+                    <img className="imgCard" src={imgCard} alt={titleCard} ></img>
+                    <h2>{titleCard}</h2>
+                </Link>
+            
         </div >
     );
 };
 
 export default Card;
-
-/*    {logement.map(logement) => {
-
-                <link key={logement.id} to={"../pages/Logement/Logement" + id}} >
-
-            <img src={cover} alt={" Photo of " + title}> </img>
-            <h2 className="card_title"> {title} </h2>
-
-        </link>
-}} */

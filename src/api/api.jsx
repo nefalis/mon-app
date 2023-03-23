@@ -1,12 +1,8 @@
-import React from 'react';
-import logement from "./logements.json"
 
-const api = () => {
-    return (
-        <div className='logement'>
-            {logement}
-        </div>
-    );
+import logements from "./logements.json"
+
+const getAllLogement = () => {
+    return logements
 };
 
-export default api;
+export { getAllLogement };

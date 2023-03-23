@@ -1,7 +1,8 @@
 import React from 'react';
-import './home.css'
-import Banner from "../../components/banner/Banner"
-import Card from "../../components/card/Card"
+import './home.css';
+import Banner from "../../components/banner/Banner";
+import Card from "../../components/card/Card";
+import { getAllLogement } from '../../api/api';
 
 const Home = () => {
     return (
@@ -9,10 +10,19 @@ const Home = () => {
             <Banner />
 
 
-            <section className='card_logement'>
-                <Card />
+            <div className='card_logement'>
 
-            </section>
+                {getAllLogement().map((logement) => {
+                    return (
+                        <Card
+                            key={logement.id}
+                            idCard={logement.id}
+                            imgCard={logement.cover}
+                            titleCard={logement.title}
+                        />
+                    );
+                })}
+            </div>
         </div>
     )
 

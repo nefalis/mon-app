@@ -4,8 +4,8 @@ import React from 'react';
 const Logement = () => {
     return (
         <div>
-
-            page logement
+page du logement
+            
         </div>
     )
 
