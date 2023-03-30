@@ -7,7 +7,6 @@ import './header.css'
 const Header = () => {
     return (
         <div className='header'>
-            <header>
                 <nav>
                     <img src={logo}
                         alt="logo orange"></img>
@@ -17,7 +16,6 @@ const Header = () => {
                         <NavLink to='/propos' className={({ isActive }) => (isActive ? "link-active" : "sidebar")}>A Propos </NavLink>
                     </div>
                 </nav>
-            </header>
         </div>
     );
 };

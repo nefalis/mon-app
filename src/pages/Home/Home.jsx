@@ -6,12 +6,14 @@ import { getAllLogement } from '../../api/api';
 
 const Home = () => {
     return (
-        <div className='home_banner'>
-            <Banner />
 
+        <main className='home'>
+
+            <div className='home_banner'>
+                <Banner />
+            </div>
 
             <div className='card_logement'>
-
                 {getAllLogement().map((logement) => {
                     return (
                         <Card
@@ -23,7 +25,8 @@ const Home = () => {
                     );
                 })}
             </div>
-        </div>
+
+        </main>
     )
 
 

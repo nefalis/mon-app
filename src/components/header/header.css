@@ -1,8 +1,10 @@
-header {
+.header {
     display: flex;
     max-width: 1240px;
     flex-direction: row;
-    margin: 20px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-between;
 
 }
 

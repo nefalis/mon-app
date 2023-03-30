@@ -1,0 +1,20 @@
+.home {
+    max-width: 1240px;
+    margin: auto;
+}
+
+
+
+.card_logement {
+    max-width: 1240px;
+    border-radius: 25px;
+    background: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+    margin-top: 40px;
+    gap: 20px;
+    
+}
