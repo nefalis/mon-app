@@ -1,0 +1,76 @@
+.logementPage {
+    max-width: 1240px;
+    padding: 0 20px 0 20px;
+}
+
+
+.detailLogement {
+
+    margin: 20px;
+
+}
+
+
+.detailLogement h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    bottom: 39.06%;
+}
+
+.detailLogement p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.tagLogement {
+  
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.hostRate {
+
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+
+
+}
+
+.hostRate .host {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hostRate .host img {
+
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+
+    background: #C4C4C4;
+
+
+}
+
+.hostRate .host p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    line-height: 142.6%;
+    text-align: right;
+    width: 30%;
+    margin: 10px;
+}
+
+.hostRate .rate {
+
+    text-align: right;
+}

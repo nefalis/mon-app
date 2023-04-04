@@ -1,0 +1,22 @@
+.tagLocation {
+    background-color: #FF6060;
+
+    height: 25px;
+    display: flex;
+    border-radius: 10px;
+    padding: 0 20px;
+    gap: 10px;
+    justify-content: center;
+    width: 115px;
+
+
+}
+
+.tagText {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+
+}

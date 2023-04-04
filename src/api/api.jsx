@@ -5,4 +5,8 @@ const getAllLogement = () => {
     return logements
 };
 
-export { getAllLogement };
+const getOneLogement = async (id) => {
+    return await logements.find((logement) => logement.id === id);
+}
+
+export { getAllLogement, getOneLogement };

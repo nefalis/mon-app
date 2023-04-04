@@ -1,0 +1,47 @@
+.slideshowContainer {
+    height: 415px;
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+
+.imgSlideshow {
+
+    object-fit: cover;
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+}
+
+
+.leftArrow {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    left: 30px;
+}
+
+.rightArrow {
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    right: 30px;
+}
+
+.numberImg {
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+}

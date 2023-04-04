@@ -12,14 +12,16 @@ const Rating = ({ numberStar }) => {
                 numberStar >= levelStar ? (
                     <img className='starImg'
                         src={FullStar}
-                        alt="full Star" >
+                        alt="full Star"
+                        key={levelStar}>
                     </img>
 
                 ) : (
 
                     <img className='starImg'
                         src={EmptyStar}
-                        alt="empty star" >
+                        alt="empty star" 
+                        key={levelStar}>
                     </img>
                 )
 

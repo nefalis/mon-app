@@ -18,7 +18,7 @@ const Router = () => {
 
 
                 <Route path='/home' element={<Home />} />
-                <Route path='/logement/:id' element={<Logement />} />
+                <Route path='/logement/:id' element={<Logement />} /> {/* logement.html?id=jfdhjggbbrtkvb*/}
                 <Route path='/propos' element={<Propos />} />
 
                 {/*si trouve pas execute cette route*/}

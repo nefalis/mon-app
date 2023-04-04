@@ -3,8 +3,8 @@ import "./tag.css"
 
 const Tag = ( {tag}) => {
     return (
-        <div className='tag'>
-            <p>{tag}</p>
+        <div className='tagLocation'>
+            <p className='tagText'>{tag}</p>
         </div>
     );
 };

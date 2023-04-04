@@ -31,24 +31,24 @@ const Carousel = ({ pictures }) => {
 
 
     return (
-        <div className='"slideshow'>
-            <div className='leftArrow'>
-                <button className='previous' onClick={() => goPrevious}>
-                    <img src={fleche_gauche} alt="flecheGauche" />
+        <div className='slideshowContainer'>
 
-                </button>
+
+            <img className='imgSlideshow'
+                src={pictures[currentIndex]} alt={currentIndex}>
+            </img>
+
+            <div className='arrow'>
+                <div className='leftArrow'>
+                    <img src={fleche_gauche} alt="fleche Gauche" onClick={goPrevious} />
+                </div>
+
+                <div className='rightArrow'>
+                    <img src={fleche_droite} alt="fleche Droite" onClick={goNext} />
+                </div>
             </div>
 
-            <div className='imgCarousel'
-                style={{ backgroundImage: `url("${pictures[currentIndex]}")` }}
 
-            ></div>
-
-            <div className='rightArrow'>
-                <button className='next' onClick={() => goNext}>
-                    <img src={fleche_droite} alt="flecheDroite" />
-                </button>
-            </div>
 
             <div className='numberImg'>
                 <p>{currentIndex + 1}/{pictures.length}</p>
