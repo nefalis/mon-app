@@ -46,7 +46,6 @@ const Logement = () => {
 
             </div>
 
-
             <div className='detailLogement' >
 
                 <h2>{logement.title}</h2>
@@ -65,9 +64,6 @@ const Logement = () => {
                 })}
             </div>
 
-
-
-
             <div className='hostRate'>
                 <div className='host'>
                     <p>{logement.host.name}</p>
@@ -75,22 +71,97 @@ const Logement = () => {
                 </div>
 
                 <div className='rate'>
-                    <Rating />
+                    <Rating
+                        rate={logement.rating}
+                    />
                 </div>
             </div>
 
             <div className='dropDown'>
-                <DropDown />
 
+                <DropDown
+                    title={"Description"}
+                    content={logement.description}
+                />
+
+                <DropDown
+                    title={"Équipements"}
+                    content={logement.equipements}
+
+                />
             </div>
-
-
 
         </main>
     )
-
-
-
 }
 
 export default Logement;
+
+/*
+<DropDown
+    title={"Équipements"}
+    content={logement.equipements.map((equipement, index) => {
+    key={index} equipement={equipement}
+    }
+    )}
+/>      
+*/
+
+/*
+<div className='equipementDrop'>
+                    title={"Équipements"}
+                    content={logement.equipements.map((equipement, index) => {
+                        return (
+                            <DropDown
+                                key={index} equipement={equipement}
+                            />
+                        )
+                    }
+
+                    )}
+
+                </div>
+*/
+
+/*
+<DropDown
+                    title={"Équipements"}
+                    content={logement.equipements}
+
+                />
+*/
+
+/*
+<DropDown
+                    title={"Équipements"}
+                    content={logement.equipements.map((equipement, index) => {
+                        <li key={index}>{equipement}</li>
+
+                    })}
+                />
+*/
+
+/*
+<DropDown
+                    title={"Équipements"}
+                    content={logement.equipements.map((equipement, index) => {
+                        return (
+                            <li key={index}>{equipement}</li>
+                        )
+                    }
+                    )}
+                />
+*/
+
+/*
+  <DropDown title={"Équipements"}>
+                    <ul>
+                        {logement.equipements.map((equipement) => {
+                            return (
+                                <li key={equipement}></li>
+                            )
+                        }
+                        )}
+                    </ul>
+                </DropDown>
+*/ 

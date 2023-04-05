@@ -7,7 +7,8 @@
 .detailLogement {
 
     margin: 20px;
-
+    z-index: 1;
+    width: 335px;
 }
 
 
@@ -25,20 +26,22 @@
 }
 
 .tagLogement {
-  
+    z-index: 1;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
+    width: 335px;
 }
 
 
 .hostRate {
-
+    width: 335px;
     display: flex;
-    text-align: right;
     flex-direction: column;
-
+    justify-content: space-between;
+    z-index: 2;
+    text-align: right;
 
 }
 
@@ -47,6 +50,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: flex-end;
+
 }
 
 .hostRate .host img {
@@ -73,4 +77,10 @@
 .hostRate .rate {
 
     text-align: right;
+}
+
+.dropDown {
+    width: 582px;
+
+
 }
