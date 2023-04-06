@@ -4,7 +4,9 @@
     display: flex;
     align-items: center;
     position: relative;
-   
+    width: auto;
+    
+ 
 }
 
 

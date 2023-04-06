@@ -6,6 +6,7 @@ import Carousel from "../../components/carousel/Carousel"
 import Tag from "../../components/tag/Tag"
 import Rating from "../../components/rating/Rating"
 import DropDown from "../../components/dropDown/DropDown"
+import Error from "../../pages/Error/Error"
 import "../Logement/logement.css"
 
 
@@ -30,6 +31,9 @@ const Logement = () => {
 
     if (!load) {
         return <div>Loading ....</div>
+    }
+    if (!logement)  {
+        return <Error />
     }
 
 
@@ -86,7 +90,7 @@ const Logement = () => {
 
                 <DropDown
                     title={"Équipements"}
-                    content={logement.equipements}
+                    content={logement.equipments}
 
                 />
             </div>

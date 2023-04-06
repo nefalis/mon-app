@@ -1,17 +1,36 @@
 import React from 'react';
+
 import './propos.css'
 
-import Banner from "../../components/banner/Banner";
+import aboutData from "../../api/aboutData"
+import DropDown from "../../components/dropDown/DropDown"
+import BannerPropos from "../../components/proposBanner/ProposBanner"
 
 const Propos = () => {
-return (
-   
-       <div className='home_banner'>
-                <Banner />
+
+    return (
+
+        <main className='ContainerPropos'>
+
+            <div className='homeBanner'>
+                <BannerPropos />
             </div>
-    
-  
-)
+
+            <div className='dropDownAbout'>
+
+                {aboutData.map((data) => {
+                    return (
+                        <DropDown title={data.title} content={data.text}
+                        />
+
+                    )
+                })}
+
+                
+            </div>
+
+        </main>
+    )
 
 
 }

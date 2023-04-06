@@ -5,7 +5,6 @@ import arrowDropDown from "../../assets/images/flecheDropDown.svg"
 
 const DropDown = ({ title, content }) => {
     const [open, setOpen] = useState(false)
-
     const openDrop = () => { // modifie la valeur open au click
         setOpen(!open);
     }
@@ -24,8 +23,17 @@ const DropDown = ({ title, content }) => {
 
             <div className='dropDownContent'>
                 {open && (
+
                     <div className='dropDownContentText'>
-                        <p>{content}</p>
+                        <p>{content instanceof Array
+                            ?
+                            content.map((equipement) => (
+                                <span key={equipement}> {equipement} </span>
+                            ))
+                            :
+                            content
+                        }
+                        </p>
                     </div>
                 )}
 

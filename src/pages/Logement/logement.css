@@ -1,7 +1,11 @@
 .logementPage {
     max-width: 1240px;
-    padding: 0 20px 0 20px;
+    margin-left: 20px;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
 }
+
 
 
 .detailLogement {

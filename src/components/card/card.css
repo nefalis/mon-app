@@ -5,7 +5,9 @@
     position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
-
+    margin: auto;
+    display: flex;
+    margin: 0 0 10px 0;
 }
 
 .imgCard {
@@ -13,7 +15,7 @@
     position: absolute;
     width: 340px;
     height: 340px;
-    border-radius: 10px; 
+    border-radius: 10px;
     opacity: .6;
 }
 
@@ -21,11 +23,20 @@
     position: absolute;
     font-size: 18px;
     font-weight: 500;
-    width: 300px;
     color: #FFFFFF;
     top: 280px;
-    left: 20px;
-    z-index: 10;
+    left: 10px;
+}
 
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    .imgCard {
+        width: 100%;
+    }
 
 }

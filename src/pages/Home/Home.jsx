@@ -4,13 +4,15 @@ import Banner from "../../components/banner/Banner";
 import Card from "../../components/card/Card";
 import { getAllLogement } from '../../api/api';
 
+
 const Home = () => {
     return (
 
         <main className='home'>
 
             <div className='home_banner'>
-                <Banner />
+                <Banner 
+                />
             </div>
 
             <div className='card_logement'>
