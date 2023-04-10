@@ -32,7 +32,7 @@ const Logement = () => {
     if (!load) {
         return <div>Loading ....</div>
     }
-    if (!logement)  {
+    if (!logement) {
         return <Error />
     }
 
@@ -40,6 +40,8 @@ const Logement = () => {
     return (
 
         <main className='logementPage'>
+
+
 
             <div className='carouselLogement'>
 
@@ -50,34 +52,38 @@ const Logement = () => {
 
             </div>
 
-            <div className='detailLogement' >
+            <div className='profilLogement'>
 
-                <h2>{logement.title}</h2>
-                <p> {logement.location}</p>
+                <div className='detailLogement' >
 
-            </div>
+                    <h2>{logement.title}</h2>
+                    <p> {logement.location}</p>
 
-            <div className='tagLogement'>
-                {logement.tags.map((tag) => {
-                    return (
-                        <Tag
-                            tag={tag} key={tag}
-                        />
 
-                    )
-                })}
-            </div>
 
-            <div className='hostRate'>
-                <div className='host'>
-                    <p>{logement.host.name}</p>
-                    <img src={logement.host.picture} alt={logement.host.name} ></img>
+                    <div className='tagLogement'>
+                        {logement.tags.map((tag) => {
+                            return (
+                                <Tag
+                                    tag={tag} key={tag}
+                                />
+
+                            )
+                        })}
+                    </div>
+
                 </div>
+                <div className='hostRate'>
+                    <div className='host'>
+                        <p>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt={logement.host.name} ></img>
+                    </div>
 
-                <div className='rate'>
-                    <Rating
-                        rate={logement.rating}
-                    />
+                    <div className='rate'>
+                        <Rating
+                            rate={logement.rating}
+                        />
+                    </div>
                 </div>
             </div>
 

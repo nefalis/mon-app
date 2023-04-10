@@ -1,18 +1,19 @@
 .logementPage {
     max-width: 1240px;
     margin-left: 20px;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
+    margin: auto;
+    display: flex;
+
+    flex-direction: column;
 }
 
-
+.profilLogement {
+    display: flex;
+    justify-content: space-between;
+}
 
 .detailLogement {
-
-    margin: 20px;
-    z-index: 1;
-    width: 335px;
+    margin: 20px 20px 20px 0px;
 }
 
 
@@ -21,21 +22,31 @@
     font-weight: 500;
     color: #FF6060;
     bottom: 39.06%;
+    height: 51px;
 }
 
 .detailLogement p {
     font-size: 18px;
     font-weight: 500;
     color: #FF6060;
+    height: 26px;
 }
 
 .tagLogement {
-    z-index: 1;
+    display: flex;
+    gap: 10px;
+    width: 335px;
+    margin: 20px 20px 20px 0px;
+
+}
+
+.tagLogement p {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
     width: 335px;
+    color: #FFFFFF;
 }
 
 
@@ -43,15 +54,15 @@
     width: 335px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    z-index: 2;
+
+    margin: 20px 0px 20px 20px;
     text-align: right;
 
 }
 
 .hostRate .host {
     display: flex;
-    width: 100%;
+
     flex-direction: row;
     justify-content: flex-end;
 
@@ -81,10 +92,17 @@
 .hostRate .rate {
 
     text-align: right;
+    margin-top: 20px;
 }
 
 .dropDown {
-    width: 582px;
 
-
+    display: flex;
+justify-content: space-between;
+width: 100%;
 }
+
+.DropDown {
+    width: 47.5%;
+}
+

@@ -3,14 +3,9 @@ import './carousel.css';
 import fleche_droite from '../../assets/images/fleche_droite.svg'
 import fleche_gauche from '../../assets/images/fleche_gauche.svg'
 
-
-
 const Carousel = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0); //1er slide (0)
     const length = pictures.length; // 
-
-
-
 
     const goPrevious = () => {
         const isFirst = currentIndex === 0;
@@ -18,7 +13,6 @@ const Carousel = ({ pictures }) => {
         // va dernier slide quand 1er
         const newIndex = isFirst ? length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
-
     }
 
     const goNext = () => {
@@ -29,7 +23,6 @@ const Carousel = ({ pictures }) => {
         setCurrentIndex(newIndex);
     }
 
-
     return (
         <div className='slideshowContainer'>
 
@@ -38,20 +31,24 @@ const Carousel = ({ pictures }) => {
                 src={pictures[currentIndex]} alt={currentIndex}>
             </img>
 
-            <div className='arrow'>
-                <div className='leftArrow'>
-                    <img src={fleche_gauche} alt="fleche Gauche" onClick={goPrevious} />
-                </div>
 
-                <div className='rightArrow'>
-                    <img src={fleche_droite} alt="fleche Droite" onClick={goNext} />
-                </div>
+            <div className='leftArrow'>
+                <img classname={pictures.lenght !== 1 ? "leftArrow" : "arrowHidden"} 
+                src={fleche_gauche} alt="fleche Gauche" onClick={goPrevious} />
+            </div>
+
+            <div className='rightArrow'>
+                <img classname={pictures.lenght !== 1 ? "rightArrow" : "arrowHidden"}
+                src={fleche_droite} alt="fleche Droite" onClick={goNext} />
             </div>
 
 
 
+
             <div className='numberImg'>
-                <p>{currentIndex + 1}/{pictures.length}</p>
+                <p className={pictures.lenght === 1 ? "numberImgHidden" : "numberImg"} >
+                    {currentIndex + 1}/{pictures.length}
+                </p>
             </div>
 
 

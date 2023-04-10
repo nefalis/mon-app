@@ -1,17 +1,13 @@
 .slideshowContainer {
-    height: 415px;
     max-width: 1240px;
     display: flex;
     align-items: center;
     position: relative;
     width: auto;
-    
- 
 }
 
 
 .imgSlideshow {
-
     object-fit: cover;
     border-radius: 25px;
     height: 415px;
@@ -19,12 +15,16 @@
 }
 
 
+.arrowHidden,
+.numberImgHidden {
+    display: none;
+}
+
 .leftArrow {
     display: flex;
     position: absolute;
     cursor: pointer;
     background: transparent;
-    border: 0;
     left: 30px;
 }
 
@@ -33,7 +33,6 @@
     position: absolute;
     cursor: pointer;
     background: transparent;
-    border: 0;
     right: 30px;
 }
 
@@ -46,4 +45,11 @@
     font-size: 18px;
     font-weight: 500;
     position: absolute;
+
 }
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 768px) {}

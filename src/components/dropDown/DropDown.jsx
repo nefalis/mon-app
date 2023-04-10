@@ -43,24 +43,3 @@ const DropDown = ({ title, content }) => {
 };
 
 export default DropDown;
-
-/*
-<div className='dropDown'>
-
-            <div className='dropDownHeader'>
-                <h2 className='titleDropDown'> {title} </h2>
-
-                <img className={arrowDropDown}
-                    src={arrowDropDown} alt="arrow" onClick={openDrop}>
-                </img>
-            </div>
-            {!open ? (
-                <div className='openDrop'>
-                    <p>{content}</p>
-                </div>
-            ) : (
-                <div className='closeDrop'>{content}</div>
-            )}
-        </div>
-
-*/
