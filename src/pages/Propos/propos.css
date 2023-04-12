@@ -1,11 +1,37 @@
 .ContainerPropos {
     max-width: 1240px;
-    margin: auto;
+    margin: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .dropDownAbout {
-width: 1023px;
-font-weight: 500;
-font-size: 24px;
+    max-width: 1023px;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
+/** Responsive **/
+
+@media screen and (max-width: 768px) {
+    .ContainerPropos {
+        min-width: 300px;
+        margin: 20px;
+        display: flex;
+    }
+
+    .homeBanner {
+        margin-top: 10px;
+        height: 223px;
+        min-width: 300px;
+    }
+
+    .dropDownAbout {
+        width: auto;
+    }
+}
