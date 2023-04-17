@@ -32,6 +32,7 @@
     display: flex;
     gap: 10px;
     margin: 20px 20px 20px 0px;
+    flex-wrap: wrap;
 
 }
 
@@ -96,20 +97,32 @@
 @media screen and (max-width: 768px) {
 
     .logementPage {
-
         flex-direction: column;
-        width: 100%;
     }
 
     .profilLogement {
         flex-direction: column;
     }
 
+    .detailLogement h2 {
+        font-size: 18px;
+    }
+
+    .hostRate .host p {
+        font-size: 14px;
+    }
+
     .hostRate {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        width: auto;
     }
+
+    .hostRate .host {
+        justify-content: space-between;
+    }
+
 
     .tagLogement p {
         font-size: 10px;

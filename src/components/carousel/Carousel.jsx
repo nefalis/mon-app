@@ -33,12 +33,12 @@ const Carousel = ({ pictures }) => {
 
 
             <div className='leftArrow'>
-                <img classname={pictures.lenght !== 1 ? "leftArrow" : "arrowHidden"} 
+                <img className={pictures.length !== 1 ? "leftArrow" : "arrowHidden"} 
                 src={fleche_gauche} alt="fleche Gauche" onClick={goPrevious} />
             </div>
 
             <div className='rightArrow'>
-                <img classname={pictures.lenght !== 1 ? "rightArrow" : "arrowHidden"}
+                <img className={pictures.length !== 1 ? "rightArrow" : "arrowHidden"}
                 src={fleche_droite} alt="fleche Droite" onClick={goNext} />
             </div>
 
@@ -46,7 +46,7 @@ const Carousel = ({ pictures }) => {
 
 
             <div className='numberImg'>
-                <p className={pictures.lenght === 1 ? "numberImgHidden" : "numberImg"} >
+                <p className={pictures.length === 1 ? "numberImgHidden" : "numberImg"} >
                     {currentIndex + 1}/{pictures.length}
                 </p>
             </div>

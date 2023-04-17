@@ -81,7 +81,7 @@ const Logement = () => {
 
                     <div className='rate'>
                         <Rating
-                            rate={logement.rating}
+                            numberStar={logement.rating}
                         />
                     </div>
                 </div>

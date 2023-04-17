@@ -6,8 +6,8 @@
     height: 223px;
     border-radius: 25px;
     background: #000000;
-    margin: 20px;
     overflow: hidden;
+    margin: 20px;
 }
 
 .banner img {
@@ -30,12 +30,14 @@
 
     .banner {
         margin: 20px;
-        height: 223px;
+        height: 111px;
         justify-content: flex-start;
+        border-radius: 10px;
     }
 
     .banner h1 {
         margin-left: 20px;
+        font-size: 24px;
 
     }
 
