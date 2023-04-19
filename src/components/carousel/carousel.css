@@ -41,8 +41,8 @@
 .numberImg {
     bottom: 20px;
     left: 50%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -54,4 +54,22 @@
 /* Responsive */
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .leftArrow {
+        height: 25px;
+        left: 10px;
+    }
+
+    .rightArrow {
+        height: 25px;
+        right: 10px;
+    }
+
+    .imgSlideshow {
+        height: 335px;
+    }
+
+    .numberImg {
+        display: none;
+    }
+}

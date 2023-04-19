@@ -1,16 +1,17 @@
-.star {
-    height: 24px;
+.starImg {
+    height: 30px;
+    padding-left: 9px;
 }
 
-.starImg {
-    height: 15px;
-}
 
 
 /* Responsive */
 
 @media screen and (max-width: 768px) {
-    .star {
-        height: 15px;
+    .starImg {
+        height: 18px;
+        padding-left: 0px;
+    
     }
+
 }

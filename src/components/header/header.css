@@ -3,8 +3,8 @@
     max-width: 1240px;
     flex-direction: row;
     margin: 0px auto;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center;
+    justify-content: space-between; */
 
 }
 
@@ -18,7 +18,7 @@
 }
 
 .header img {
-    width: 210 px;
+    /* width: 210 px; */
     height: 68px;
     
 }
@@ -40,7 +40,7 @@
     text-decoration: none;
     display: flex;
     gap: 50px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 

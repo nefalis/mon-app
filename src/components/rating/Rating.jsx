@@ -2,6 +2,8 @@ import React from 'react';
 import EmptyStar from "../../assets/images/emptyStar.svg"
 import FullStar from "../../assets/images/fullStar.svg"
 
+import "../rating/rating.css"
+
 
 
 const Rating = ({ numberStar }) => {
