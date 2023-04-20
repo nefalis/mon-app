@@ -4,8 +4,6 @@ import FullStar from "../../assets/images/fullStar.svg"
 
 import "../rating/rating.css"
 
-
-
 const Rating = ({ numberStar }) => {
     const array = [1, 2, 3, 4, 5];
     return (
@@ -17,18 +15,13 @@ const Rating = ({ numberStar }) => {
                         alt="full Star"
                         key={levelStar}
                     />
-
-
                 ) : (
-
                     <img className='starImg'
                         src={EmptyStar}
                         alt="empty star"
                         key={levelStar}
                     />
-
                 )
-
             )}
         </div>
     );

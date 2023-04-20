@@ -15,9 +15,6 @@ const Logement = () => {
     const [logement, setLogement] = useState({})
     const [load, setLoad] = useState(false)
 
-
-    //console.log(logement);
-
     useEffect(() => {
         // Une promesse pour bien attendre que les données arrivent
         getOneLogement(id)
@@ -36,12 +33,9 @@ const Logement = () => {
         return <Error />
     }
 
-
     return (
 
         <main className='logementPage'>
-
-
 
             <div className='carouselLogement'>
 
@@ -59,15 +53,12 @@ const Logement = () => {
                     <h2>{logement.title}</h2>
                     <p> {logement.location}</p>
 
-
-
                     <div className='tagLogement'>
                         {logement.tags.map((tag) => {
                             return (
                                 <Tag
                                     tag={tag} key={tag}
                                 />
-
                             )
                         })}
                     </div>
@@ -97,7 +88,6 @@ const Logement = () => {
                 <DropDown
                     title={"Équipements"}
                     content={logement.equipments}
-
                 />
             </div>
 

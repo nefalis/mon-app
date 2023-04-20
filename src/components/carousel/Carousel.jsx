@@ -26,31 +26,25 @@ const Carousel = ({ pictures }) => {
     return (
         <div className='slideshowContainer'>
 
-
             <img className='imgSlideshow'
                 src={pictures[currentIndex]} alt={currentIndex}>
             </img>
 
-
             <div className='leftArrow'>
-                <img className={pictures.length !== 1 ? "leftArrow" : "arrowHidden"} 
-                src={fleche_gauche} alt="fleche Gauche" onClick={goPrevious} />
+                <img className={pictures.length !== 1 ? "leftArrow" : "arrowHidden"}
+                    src={fleche_gauche} alt="fleche Gauche" onClick={goPrevious} />
             </div>
 
             <div className='rightArrow'>
                 <img className={pictures.length !== 1 ? "rightArrow" : "arrowHidden"}
-                src={fleche_droite} alt="fleche Droite" onClick={goNext} />
+                    src={fleche_droite} alt="fleche Droite" onClick={goNext} />
             </div>
-
-
-
 
             <div className='numberImg'>
                 <p className={pictures.length === 1 ? "numberImgHidden" : "numberImg"} >
                     {currentIndex + 1}/{pictures.length}
                 </p>
             </div>
-
 
         </div >
 

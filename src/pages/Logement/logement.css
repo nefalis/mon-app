@@ -34,7 +34,6 @@
     gap: 10px;
     margin: 20px 20px 20px 0px;
     flex-wrap: wrap;
-
 }
 
 .tagLogement p {
@@ -53,14 +52,12 @@
     flex-direction: column;
     margin-top: 20px;
     text-align: right;
-
 }
 
 .hostRate .host {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
 }
 
 .hostRate .host img {
@@ -68,8 +65,6 @@
     height: 64px;
     border-radius: 100%;
     background: #C4C4C4;
-
-
 }
 
 .hostRate .host p {
@@ -84,7 +79,6 @@
 
 .hostRate .rate {
     text-align: right;
-
 }
 
 .dropDown {
@@ -105,7 +99,7 @@
         flex-direction: column;
     }
 
-    .detailLogement{
+    .detailLogement {
         margin: 10px 10px 10px 0px;
     }
 
@@ -133,9 +127,6 @@
     .tagLogement {
         flex-wrap: wrap;
         margin: 10px 10px 10px 0;
-    
     }
-
-
 
 }

@@ -4,7 +4,6 @@
     align-items: center;
     flex-direction: column;
     color: #FF6060;
-
 }
 
 .pageError h1 {
@@ -15,7 +14,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 66px;
-
 }
 
 .pageError p {
@@ -31,7 +29,6 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 160px;
-
 }
 
 /* Responsive */

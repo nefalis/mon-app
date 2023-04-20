@@ -8,21 +8,15 @@
     border-radius: 10px;
     height: 25px;
     align-items: center;
-
-
 }
 
 .tagText {
     display: flex;
     align-items: center;
-
-
     padding: 0 20px;
-
     justify-content: center;
     width: auto;
     height: 25px;
-
 }
 
 /* Responsive */

@@ -22,16 +22,13 @@ const Propos = () => {
                     return (
                         <DropDown title={data.title} content={data.text}
                         />
-
                     )
                 })}
 
-                
             </div>
 
         </main>
     )
-
 
 }
 

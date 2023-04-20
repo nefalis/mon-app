@@ -1,9 +1,7 @@
 .bannerPropos {
-
     /* display: flex;
     justify-content: center;
     align-items: center; */
-
     max-width: 1240px;
     height: 223px;
     border-radius: 25px;
@@ -11,7 +9,6 @@
     filter: brightness(1.8);
     background: #000000;
     margin: auto;
-
 }
 
 .imgPropos {
@@ -21,5 +18,4 @@
     height: 100%;
     opacity: 0.3;
     position: absolute;
-
 }

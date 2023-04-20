@@ -16,7 +16,6 @@ const Router = () => {
                 {/* définie page par default*/}
                 <Route index element={<Home />} />
 
-
                 <Route path='/home' element={<Home />} />
                 <Route path='/logement/:id' element={<Logement />} /> {/* logement.html?id=jfdhjggbbrtkvb*/}
                 <Route path='/propos' element={<Propos />} />
@@ -25,7 +24,6 @@ const Router = () => {
                 <Route path='*' element={<Error />} />
 
             </Route>
-
 
         </Routes>
     );

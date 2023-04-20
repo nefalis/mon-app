@@ -8,7 +8,6 @@ const BannerPropos = () => {
     return (
         <div className='bannerPropos'>
             <img className='imgPropos' src={imgBanner} alt="vide" />
-
         </div>
     );
 };

@@ -11,7 +11,7 @@ const Home = () => {
         <main className='home'>
 
             <div className='home_banner'>
-                <Banner 
+                <Banner
                 />
             </div>
 
@@ -30,7 +30,6 @@ const Home = () => {
 
         </main>
     )
-
 
 }
 
