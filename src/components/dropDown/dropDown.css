@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: -23px;
 }
 
 .titleDropDown {
@@ -50,7 +51,6 @@
     font-size: 18px;
     font-weight: 400;
     position: relative;
-    top: -35px;
     border-radius: 10px;
     z-index: -1;
 }
