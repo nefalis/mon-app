@@ -1,11 +1,10 @@
 .dropDown {
     display: flex;
     gap: 10px;
-    position: relative;
     flex-wrap: wrap;
     margin: 20px 0px;
-    /* align-items: center; */
-    /* width: 100%; */
+    width: 100%;
+    position: relative;
 }
 
 .dropDownHeader {
@@ -24,8 +23,6 @@
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    /* display: flex;
-    align-items: center; */
 }
 
 .dropDownHeader img {
@@ -55,12 +52,10 @@
     position: relative;
     top: -20px;
     border-radius: 10px;
-    /* display: flex; */
     z-index: -1;
 }
 
 .dropDownContentText {
-    /* margin: auto; */
     margin: 40px 20px 40px 20px;
 }
 

@@ -81,19 +81,15 @@
     text-align: right;
 }
 
-.dropDown {
-    /* display: flex;
-    justify-content: space-between; */
-    width: 100%;
-}
+.dropDownLogement {
+    display: flex;
+    /* justify-content: space-around;  */
+    gap: 10px; 
+} 
 
 /* Responsive */
 
 @media screen and (max-width: 768px) {
-
-    /* .logementPage {
-        flex-direction: column;
-    } */
 
     .profilLogement {
         flex-direction: column;
@@ -129,4 +125,9 @@
         margin: 10px 10px 10px 0;
     }
 
+    .dropDownLogement {
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
 }

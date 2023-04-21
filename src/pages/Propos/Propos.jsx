@@ -20,7 +20,7 @@ const Propos = () => {
 
                 {aboutData.map((data) => {
                     return (
-                        <DropDown title={data.title} content={data.text}
+                        <DropDown title={data.title} content={data.text} key={data}
                         />
                     )
                 })}

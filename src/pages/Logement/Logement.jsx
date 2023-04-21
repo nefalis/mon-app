@@ -78,7 +78,7 @@ const Logement = () => {
                 </div>
             </div>
 
-            <div className='dropDown'>
+            <div className='dropDownLogement'>
 
                 <DropDown
                     title={"Description"}
