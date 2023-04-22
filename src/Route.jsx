@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom"
 
-import Home from './Home/Home';
-import Logement from './Logement/Logement';
-import Propos from './Propos/Propos';
-import Error from './Error/Error';
-import Layout from '../components/Layout';
+import Home from './pages/Home/Home';
+import Logement from './pages/Logement/Logement';
+import Propos from './pages/Propos/Propos';
+import Error from './pages/Error/Error';
+import Layout from './pages/Layout';
 
 const Router = () => {
     return (
