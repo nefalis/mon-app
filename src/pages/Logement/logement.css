@@ -83,9 +83,9 @@
 
 .dropDownLogement {
     display: flex;
-    /* justify-content: space-around;  */
-    gap: 10px; 
-} 
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
 
 /* Responsive */
 
@@ -126,8 +126,10 @@
     }
 
     .dropDownLogement {
-        flex-wrap: wrap;
-        width: 100%;
+        display: block;
+    }
 
+    .dropDownLogement .dropDown {
+        width: 100%;
     }
 }

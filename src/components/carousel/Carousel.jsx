@@ -5,10 +5,10 @@ import fleche_gauche from '../../assets/images/fleche_gauche.svg'
 
 const Carousel = ({ pictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0); //1er slide (0)
-    const length = pictures.length; 
+    const length = pictures.length;
 
     const goPrevious = () => {
-        const isFirst = currentIndex === 0; 
+        const isFirst = currentIndex === 0;
 
         // va dernier slide quand 1er
         const newIndex = isFirst ? length - 1 : currentIndex - 1;
@@ -16,7 +16,7 @@ const Carousel = ({ pictures }) => {
     }
 
     const goNext = () => {
-        const isLast = currentIndex === length - 1; 
+        const isLast = currentIndex === length - 1;
 
         // va 1er quand dernier
         const newIndex = isLast ? 0 : currentIndex + 1;
@@ -50,7 +50,5 @@ const Carousel = ({ pictures }) => {
 
     )
 }
-
-
 
 export default Carousel;

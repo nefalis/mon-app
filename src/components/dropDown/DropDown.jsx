@@ -21,10 +21,8 @@ const DropDown = ({ title, content }) => {
                 </img>
             </div>
 
-            <div className='dropDownContent'>
-                {open && (
-
-                    <div className='dropDownContentText'>
+            <div className={`dropDownContent ${open ? 'open' : 'close'}`}>
+                <div className='dropDownContentText'>
                         <p>{content instanceof Array
                             ?
                             content.map((equipement) => (
@@ -35,7 +33,6 @@ const DropDown = ({ title, content }) => {
                         }
                         </p>
                     </div>
-                )}
 
             </div>
         </div>

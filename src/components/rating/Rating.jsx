@@ -17,7 +17,7 @@ const Rating = ({ numberStar }) => {
                     />
 
                 ) : (
-                    
+
                     <img className='starImg'
                         src={EmptyStar}
                         alt="empty star"

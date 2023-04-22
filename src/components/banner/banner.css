@@ -29,7 +29,6 @@
 @media screen and (max-width: 768px) {
 
     .banner {
-        /* margin: 20px; */
         height: 111px;
         justify-content: flex-start;
         border-radius: 10px;

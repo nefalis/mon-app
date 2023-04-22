@@ -18,12 +18,14 @@ const Propos = () => {
 
             <div className='dropDownAbout'>
 
-                {aboutData.map((data) => {
+                {aboutData.map((data, i) => {
+
                     return (
-                        <DropDown title={data.title} content={data.text} key={data}
+                        <DropDown title={data.title} content={data.text} key={i}
                         />
                     )
-                })}
+                }
+                )}
 
             </div>
 

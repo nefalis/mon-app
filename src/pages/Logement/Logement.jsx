@@ -38,12 +38,10 @@ const Logement = () => {
         <main className='logementPage'>
 
             <div className='carouselLogement'>
-
                 <Carousel
                     pictures={logement.pictures}
                     alt={logement.title}
                 />
-
             </div>
 
             <div className='profilLogement'>
